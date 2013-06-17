@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.frameworks =  'SystemConfiguration', 'CFNetwork', 'MessageUI','Social'
   
   s.dependency 'NJKWebViewProgress', '~> 0.1.6'
-  s.dependency 'SDURLCache', :git => 'https://github.com/PPTV/SDURLCache.git', :commit => "ef6d85920940c2f79d900b9ddcc519fbe24a21cf" 
+  s.dependency 'SDURLCache'
   s.dependency 'Reachability', '~> 3.1.0'
 end
