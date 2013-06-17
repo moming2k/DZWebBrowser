@@ -7,13 +7,13 @@ Pod::Spec.new do |s|
   s.author       = { "Ignacio Romero Zurbuchen" => "iromero@dzen.cl" }
   s.source       = { :git => "https://github.com/moming2k/DZWebBrowser.git",
                      :tag => "0.1.3" }
-
+                     
   s.source_files = 'Source/DZWebBrowser.*'
   s.requires_arc = true
 
   s.frameworks =  'SystemConfiguration', 'CFNetwork', 'MessageUI','Social'
   
   s.dependency 'NJKWebViewProgress', '~> 0.1.6'
-  s.dependency 'SDURLCache', :git => 'https://github.com/PPTV/SDURLCache.git', :commit => "ef6d85920940c2f79d900b9ddcc519fbe24a21cf"
+  s.dependency 'SDURLCache', :git => 'https://github.com/PPTV/SDURLCache.git', :commit => "ef6d85920940c2f79d900b9ddcc519fbe24a21cf" 
   s.dependency 'Reachability', '~> 3.1.0'
 end
