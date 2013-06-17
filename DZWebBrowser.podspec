@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.frameworks =  'SystemConfiguration', 'CFNetwork', 'MessageUI','Social'
   
   s.dependency 'NJKWebViewProgress', '~> 0.1.6'
-  s.dependency 'SDURLCache'
+  # s.dependency 'SDURLCache'
   s.dependency 'Reachability', '~> 3.1.0'
 end
