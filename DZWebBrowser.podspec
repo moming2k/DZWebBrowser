@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "DZWebBrowser"
-  s.version      = "0.1.4"
+  s.version      = "0.1.5"
   s.summary      = "An iPhone/iPad simple web browser controller with navigation controls and sharing features"
   s.homepage     = "https://github.com/moming2k/DZWebBrowser"
   s.license      = 'MIT'
   s.author       = { "Ignacio Romero Zurbuchen" => "iromero@dzen.cl" }
   s.source       = { :git => "https://github.com/moming2k/DZWebBrowser.git",
-                     :tag => "0.1.4" }
+                     :tag => "0.1.5" }
                      
   s.source_files = 'Source/DZWebBrowser.*'
   s.requires_arc = true
