@@ -8,6 +8,7 @@
 //
 
 #import "DZWebBrowser.h"
+#import "UIBarButtonItem+NUI.h"
 #import <QuartzCore/QuartzCore.h>
 #import "SDURLCache.h"
 #import "SDCachedURLResponse.h"
@@ -299,7 +300,9 @@ NSString * const kNewAttachmentKey = @"kNewAttachmentKey";
 
 - (UIBarButtonItem *)closeButton
 {
-    return [[UIBarButtonItem alloc] initWithTitle:textForKey(TXT_CLOSE) style:UIBarButtonItemStyleDone target:self action:@selector(closeAction:)];
+		UIBarButtonItem *close = [[UIBarButtonItem alloc] initWithTitle:textForKey(TXT_CLOSE) style:UIBarButtonItemStyleDone target:self action:@selector(closeAction:)];
+		close.nuiClass = @"none";
+		return close;
 }
 
 - (NSArray *)items
