@@ -120,15 +120,14 @@ NSString * const kNewAttachmentKey = @"kNewAttachmentKey";
     [super loadView];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
-		self.navigationController.navigationBar.respond
+    // [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
 		
 		if ([self.navigationController.navigationBar respondsToSelector:@selector(setNuiClass:)])
 		{   
 		    [self.navigationController.navigationBar setNuiClass:@"noneAllSubview"];
 		}
 
-    [self.navigationController.toolbar setTintColor:[UIColor blackColor]];
+    // [self.navigationController.toolbar setTintColor:[UIColor blackColor]];
     [self setToolbarItems:self.items animated:NO];
 		if ([self.navigationController.toolbar respondsToSelector:@selector(setNuiClass:)])
 		{   
@@ -140,10 +139,10 @@ NSString * const kNewAttachmentKey = @"kNewAttachmentKey";
     }
     else {
         [self.navigationItem setLeftBarButtonItem:self.closeButton animated:NO];
-				if ([self.closeButton respondsToSelector:@selector(setNuiClass:)])
-				{   
-				    [self.closeButton setNuiClass:@"noneAllSubview"];
-				}
+				// if ([self.closeButton respondsToSelector:@selector(setNuiClass:)])
+				// {   
+				//     [self.closeButton setNuiClass:@"noneAllSubview"];
+				// }
 				
         [self.navigationController setToolbarHidden:NO animated:NO];
     }
